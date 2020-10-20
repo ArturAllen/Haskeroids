@@ -20,8 +20,8 @@ wrap (x, y) = (x', y')
       | x >  width = x - 2*width
       | otherwise = x 
     y'
-      | y < -width = y + 2*height
-      | y >  width = y - 2*height
+      | y < -height = y + 2*height
+      | y >  hright = y - 2*height
       | otherwise = y
 
 --Desenha um pixel na tela
